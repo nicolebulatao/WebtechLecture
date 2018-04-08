@@ -1,0 +1,160 @@
+@font-face{
+	font-family:KGWhatDoesTheFoxSay;
+	src: url(../font/KGWhatDoesTheFoxSay.ttf);
+}
+
+@font-face{
+	font-family:Alin_Speech_Bubbles;
+	src: url(../font/Alin_Speech_Bubbles.ttf);
+}
+
+@font-face{
+	font-family:nikotinusDEMO;
+	src: url(../font/nikotinusDEMO.otf);
+}
+
+@font-face{
+	font-family:Olives;
+	src: url(../font/Olives.ttf);
+}
+
+@font-face{
+	font-family:JMHCANASTA;
+	src: url(../font/JMHCANASTA.ttf);
+}
+
+@font-face{
+	font-family:CoveredByYourGrace;
+	src: url(../font/CoveredByYourGrace.ttf);
+}
+
+body.home{
+	background-image: url(../images/bg5.jpg); /**linear-gradient( 225deg, royalblue, steelblue, salmon, wheat, snow);**/
+}
+
+div.opaque{
+	margin:20px;
+	background-color: WHITE;
+	opacity:0.7;
+}
+
+div.opaque2{
+	margin:20px;
+	background-color: black;
+	opacity:0.7;
+}
+
+.center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img.prelims { 
+    margin-top: 35px;
+	margin-left:20px;
+	width:97%;
+	height:450px;
+}
+
+h2.overview{
+	font-family:Olives;
+	text-align:center;
+	font-size:35px;
+	color:white;
+}
+
+h1.hprelims{
+	font-family:KGWhatDoesTheFoxSay;
+	text-align:center;
+}
+
+p.pprelims{
+	font-family:KGWhatDoesTheFoxSay;
+	text-align:center;
+}
+
+p.pp{
+	font-family:nikotinusDEMO;
+	font-size:40px;
+	text-align:center;
+}
+
+p.ppp{
+	font-family:nikotinusDEMO;
+	font-size:20px;
+	text-align:center;
+}
+
+p.topics{
+	font-family:CoveredByYourGrace;
+	font-size:25px;
+	text-align:center;
+}
+
+h5.poo{
+	font-family:JMHCANASTA;
+	color:olive;
+	text-align:center;
+}
+
+hr.hrr{
+	width:200px;
+	border: 1px dotted black;
+}
+
+hr.hrrr{
+	width:500px;
+	margin-right:2000px;
+	border: 1px dotted black;
+}
+
+body.about{
+	background-image: url(../images/bg4.jpg);
+	background-repeat:repeat;
+}
+
+p.about{
+	font-family:CoveredByYourGrace;
+	font-size:30px;
+	text-align:center;
+}
+
+p.about1{
+	font-family:CoveredByYourGrace;
+	font-size:30px;
+	text-align:center;
+}
+
+p.about2{
+	font-family:CoveredByYourGrace;
+	font-size:22px;
+	text-align:center;
+	color:
+}
+
+p.about3{
+	font-family:CoveredByYourGrace;
+	font-size:15px;
+	text-align:center;
+	color:black;
+}
+
+div.opaque3{
+	margin-top:10%;
+	background-color: white;
+	opacity:0.7;
+}
+
+div.opaque4{
+	margin-top:5%;
+	background-color: white;
+	opacity:0.7;
+}
+
+div.opaque5{
+	margin-top:10%;
+	background-color:white;
+	opacity:0.7;
+}

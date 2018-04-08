@@ -1,0 +1,217 @@
+@font-face { 
+  font-family: Yanone Kaffeesatz; 
+    src: url('../font/YanoneKaffeesatz-Regular.eot'); 
+    src: local("Yanone Kaffeesatz"), url('../font/YanoneKaffeesatz-Regular.ttf'); 
+} 
+
+@font-face { 
+  font-family: News Cycle; 
+    src: url('../font/NewsCycle-Regular.eot'); 
+    src: local("News Cycle"), url('../font/NewsCycle-Regular.ttf'); 
+} 
+
+html { 
+  height: 100%;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+footer, heade { 
+  display:block;
+}
+
+body { 
+  font: normal .80em arial, sans-serif;
+  background:transparent url(../images/1.png) repeat;
+  color: #DDD;
+}
+
+p { 
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+img { 
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color: #362C20;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+}
+
+h1, h2, h3 { 
+  font: normal 140% arial, sans-serif;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #222;
+}
+
+h2 { 
+  font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #F67F00;
+}
+
+h3 { 
+  font-size: 140%;
+  padding: 5px 0 0 0;
+}
+
+h4, h6 { 
+  color: #F67F00;
+  padding: 0 0 5px 0;
+  font: normal 150% 'Yanone kaffeesatz', arial, sans-serif;
+}
+
+h5, h6 { 
+  color: #555;
+  font: italic 95% arial, sans-serif;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;
+}
+
+#main, #container, #logo, #site_content, footer { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#main {
+  margin: 50px auto;
+  width: 1000px;
+  border-radius: 13px 13px 13px 13px;
+  -moz-border-radius: 13px 13px 13px 13px;
+  -webkit-border: 13px 13px 13px 13px;
+  background: transparent url(../images/main.png);
+  padding-bottom: 30px;
+}
+
+header { 
+  background: transparent;
+  height: 179px;
+}
+
+#logo { 
+  width: 930px;
+  height: 179px;
+  background: transparent;
+  color: #888;
+  padding: 0;
+}
+
+#logo h1, #logo h2 { 
+  font: normal 320% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover { 
+  padding: 20px 0 0 0;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour { 
+  color: #09D4FF;
+}
+
+#logo_text a:hover .logo_colour { 
+  color: #FFF;
+}
+
+#logo_text h2 { 
+  font-size: 140%;
+  padding: 0 0 0 0;
+}
+
+#site_content { 
+  width: 930px;
+  overflow: hidden;
+  margin: 0px auto 0 auto;
+  padding: 15px 0 15px 0;
+} 
+
+#sidebar_container { 
+  float: right;
+  width: 224px;
+  padding: 20px 0 0 0;
+}
+
+.sidebar { 
+  float: right;
+  width: 200px;
+  margin: 0 0 17px 0;
+  background: #222;
+  border: 1px solid #444;
+  -webkit-border-radius: 13px 13px 13px 13px; 
+  -moz-border-radius: 13px 13px 13px 13px;
+  border-radius: 13px 13px 13px 13px;
+  padding: 0 15px 5px 13px;
+}
+  
+.sidebar h3, .content h1 { 
+  padding: 0 15px 20px 0;
+  font: 200% 'News Cycle', arial, sans-serif;
+  text-shadow:  #000 1px 1px;
+  margin: 0 1px;
+  color: #FFF;
+}
+
+.sidebar h3 { 
+  padding: 14px 15px 14px 0;
+  color: #FFF;
+  font: 200% 'News Cycle', arial, sans-serif;
+}
+
+.content { 
+  text-align: left;
+  width: 630px;
+  margin: 0 0 15px 0;
+  float: left;
+  font-size: 120%;
+  padding: 14px 0 0 0;
+}
+
+.content h3 { 
+  padding: 14px 15px 14px 0;
+  color: #FFF;
+  font: 200% 'News Cycle', arial, sans-serif;
+}
+
+footer { 
+  width: 930px;
+  font: 170% 'Yanone Kaffeesatz', arial, sans-serif;
+  text-shadow: 1px 1px #0D7989;
+  height: 30px;
+  padding: 5px 0 20px 0;
+  text-align: center; 
+  -webkit-border-radius: 13px 13px 13px 13px; 
+  -moz-border-radius: 13px 13px 13px 13px;
+  border-radius: 13px 13px 13px 13px;
+  color: #FFF;
+  border: solid 1px #3BDDF5;
+  background: #0DBBD5;
+}
+
+footer p { 
+  line-height: 1.7em;
+  padding: 0 0 10px 0;
+}
+
+#nbutton{
+	position: fixed;
+	font-family: Yanone Kaffeesatz;
+	right: 0px;
+	bottom: 0px;
+}
+a{
+	font-size: 30px;
+	text-decoration: none;
+	color: #ffffff;
+}
