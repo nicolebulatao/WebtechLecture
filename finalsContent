@@ -1,0 +1,118 @@
+CONTENTS for our final website (not complete pa pero)
+- the topics covered during April 17, and 20 respectively
+
+SERVER-SIDE WEB SCRIPTING AND HTTP SERVLET
+
+========== April 17, 2018 (Tuesday)\b0  \b |\b0  \b Server-side Web Scripting ==========
+
+- not only one but
+- multiple platforms, technology
+
+Java Servlets -> JAVA EE
+(used in creating web app)
+
+- handles client requests by generating
+- hosted in a 'servlet - container' that provides the environment in which servlet runs
+(*two packages, javax.servlet and ...)
+- smethods -> servlet response and servlet request
+(serve any request from client)
+
+destruction - destroy() method
+(invoked before the servlet instance is 'unloaded', and is intended for any housekeeping cod.)
+
+HttpServlet
+- Java servlet used to handle HTTP requests and generate HTTP Responses...
+- Hosted in a 'web container', which is a component in a Java 'application server' (e.g. Apache)
+- the service() , method call is routed to a doXXX() claa, depending on HTTP request method, e.g. doGET(), doPOST().
+
+HttpServlet Response
+- object representation of the HTTP Response.
+- list of Java application servers
+- tomcat
+- glassfish
+
+Java Web (in netbeans) the steps:
+Application
+* (tick) - use dedicated folder for string libraries
+* server - tomcat
+* Java EE version - JAVA EE 7
+	in your project
+* Server package - servlet
+(for the deployment (war file was discussed i am not sure pero search na lang natin))
+
+Servlet output stream
+(served to the client)
+
+server side resources
+(stores the resources)
+
+================= April 20, 2018 (Friday) server side =================
+- process multipart data (@MultipartConfig)\fs24\lang13321\par
+- servlet (multimedia) will make database connection object 
+ * shared objects
+public interface ServletContext
+- associated with
+- have multiple listener
+*getAttribute()
+*setAttribute()
+servletContextListener()
+* contextDestroyed(ServletContextEvent sce)
+* contextInitialized(ServletContextEvent sce)
+- sharable
+Connection (every servlet associated with the inside servletContext will havea connection to "dbConn")
+
+contextDestroyed (ServletContextEvent sce)
+{
+ServletContext context = sce.getServletContext();
+Connection dbCon
+
+(advantage is that if i change a connection, only one servlet will be affected)
+
+- For every Java application there is web.xml (that can be configured) can even define error page (status code) for a particular page
+- if backend is change, change parameter value. (Don't worry the code will not be changed.)
+
+---------------
+
+String connstr = context.getInitParameter("connstrr")
+comes from a xml configuration (its not hard coded.)
+
+(the html files in the Java Servlet package)
+(index.html)
+<input type = "hidden" >
+
+
+(GetProducts.java)
+Product.java
+- (simply get the request and process data and associate with array list of java.)
+- (this arraylist can be sent to any servlet that requires this category)
+- get the request 
+- manipulate the data
+- process it and display into the interface
+- Frontend doesn't have to ask about the data/structure from the backend
+
+-----
+- request setAttribute (share attribute)
+- passed to my current request and include it sa arraylist
+
+Request Dispatcher
+- sends them to the servlet
+
+Forward
+- forward with correspinding respond error.
+(ShowHTML.java) (view = html)
+dbimages - logical, where images can be acquired
+
+----------
+
+String prodId = get the request
+
+SSI - is used, may fragment di lang request pwedeng mag include (by using the request dispatcher)
+
+* javascript is used
+ShowJSON.java(string object) (it creates object/string json (look at index.html))
+convert using json.parse
+
+use dynamic content via AJAX(w database access)
+
+ONLINE RESOURCES:
+http://tomcat.apache.org/ 
