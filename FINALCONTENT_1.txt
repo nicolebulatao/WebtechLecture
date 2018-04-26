@@ -1,0 +1,67 @@
+Java EE
+	open, standard-based development and deployment platform for creating 
+	distribute, transactional, reliable, secure, multitiered, web-based, 
+	server-centric, component-based enterprise applications
+
+Java EE Application Model
+	Java programming language, Java Virtual Machine (JVM)
+	Java EE Component
+		Java EE Clients
+			Application Clients, Applets (embedded in web clients)
+		Web Components
+			Servlets, JavaServer Pages (JSP), JavaServer Faces (JSF)
+			invoked on the servlet by the servlet container when the 
+			servlet is to be unloaded (e.g when the application a stopped
+			or undeployed) can be used by the servlets for clean-up processing (resource dealocation)
+		Servlet Request Processing (HttpServletRequest)
+			Retrieving user-supplied request parameters
+			Retrieving request header values
+		Servlet Response Processing (HttpServletResponse)
+			Setting response status code
+			Setting response headers
+			Obtaining output object for sending the response
+		Servlet Request Dispatching (RequestDispatcher)
+			Obtain a RequestDispatcher to a resource (static or dynamic) from the request object
+			
+					RequestDispatcher rqstDsp;
+					rstDsp = request. getRequestDispatcher(res);
+					
+			Include the dispatcher resource (or its output) in the current response. one or more resources
+			can be included (e.g use for banners, footers, etc.)
+			
+					rstDsp.include (request, response);
+			
+			Forwards the processing of the current request to be the dispatcher resource, 
+			the servlet processing the current request must not generate a response (e.g use in MVC "controller" servlets)
+				
+					rstDsp.forward (request, response);
+
+
+Session Tracking (HttpSession)
+		Session Tracking support is implemented either cookies or URL-rewriting
+		Obtain session object form the current request
+		
+			HttpSession session;
+			
+			session = requests.getSession(createNew);
+		
+		Obtaining session information (HttpSession)
+			getCreationTime(), getLastAccessedTime(), getMaxInactiveInternal()
+			getId(), isNew(), setMaxInactiveInternal (int val)
+		
+		destroying sessions
+			invalidate()
+			
+		URL-rewriting(HttpServletResponse)
+			encodeURL(String url), encodeRedirectURL(String url)
+			
+
+Web Context (ServletContext)
+		a web application is associated with a context, which is an object that provides methods
+		that servlets use to communicate with servlet container 
+		
+		obtaining the servlet context(HttpServlet)
+			
+		
+		
+			
