@@ -1,0 +1,168 @@
+<html>
+
+<head>
+<title>Test Your Knowledge</title>
+
+<style>
+.qheader{
+font:bold 14px Arial;
+}
+
+.qselections{
+font:normal 13px Arial;
+}
+</style>
+
+<script src="quizconfig.js">
+</script>
+
+<script>
+
+/***********************************************
+* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
+* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
+* This notice and footnote must stay intact for use
+* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
+***********************************************/
+
+var actualchoices=new Array()
+document.cookie="ready=yes"
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<!--Comments on configuring quiz script-->
+<!--Change the questions below any way you want, but make note of the following:-->
+<!--1) Perserve the <FORM> tags -->
+<!--2a) Inside each radio button, use the VALUE attribute to denote each question's choices: "a", "b", "c" etc.-->
+<!--2b) Inside each radio button, use the NAME attribute to denote which question the button belongs to ("question1", "question2" etc-->
+<!--3) Script supports unlmited # of questions. Be sure to edit .js file to enter corresponding solutions-->
+
+<p align="center">
+
+<form method="POST" name="myquiz">
+
+<font face="Arial"><big><big>Choose the Best Answer</big></big></font></p>
+
+<div class="qheader">
+1) Which of the following is odd? </div>
+<div class="qselections">
+<input type="radio" value="a" name="question1">a) Apache Tomcat <br>
+<input type="radio" value="b" name="question1">b) Red Hat <br>
+<input type="radio" value="c" name="question1">c) Onsen UI </br>
+<input type="radio" value="d" name="question1">d) Oracle Glassfish<br>
+</div>
+
+<br>
+
+<div class="qheader">
+2) What is/are the stage/s of a servlet lifecycle? </div>
+<div class="qselections">
+<input type="radio" value="a" name="question2">a) instantiation <br>
+<input type="radio" value="b" name="question2">b) initialization <br>
+<input type="radio" value="c" name="question2">c) request-handling <br>
+<input type="radio" value="d" name="question2">d) destruction <br>
+</div>
+
+<br>
+
+<div class="qheader">
+3) Object representation of the HTTP request sent by the client and received by the servlet.</div>
+<div class="qselections">
+<input type="radio" value="a" name="question3">a) HTTPServletResponse<br>
+<input type="radio" value="b" name="question3">b) HTTPServletRequest<br>
+<input type="radio" value="c" name="question3">c) ServletContextListener<br>
+<input type="radio" value="d" name="question3">d) HTTPSession <br>
+</div>
+
+<br>
+
+<div class="qheader">
+4) An annotation used when associating multi-part data to the source code</div>
+<div class="qselections">
+<input type="radio" value="a" name="question4">a) @HandlesTypes<br>
+<input type="radio" value="b" name="question4">b) @WebFilter<br>
+<input type="radio" value="c" name="question4">c) @MultipartConfig<br>
+<input type="radio" value="d" name="question4">d) @WebServlet<br>
+</div>
+
+<br>
+
+<div class="qheader">
+5) It is used to handle HTTP requests and generates HTTP responses.</div>
+<div class="qselections">
+<input type="radio" value="a" name="question5">a) HTTP Servlet<br>
+<input type="radio" value="b" name="question5">b) HTTP Requests<br>
+<input type="radio" value="c" name="question5">c) HTTP Responses<br>
+<input type="radio" value="d" name="question5">d) HTTP<br>
+</div>
+
+<br>
+
+<div class="qheader">
+6) File extension used for deployment using an application server </div>
+<div class="qselections">
+<input type="radio" value="a" name="question6">a) .zip<br>
+<input type="radio" value="b" name="question6">b) .rar<br>
+<input type="radio" value="c" name="question6">c) .wav<br>
+<input type="radio" value="d" name="question6">d) .war<br>
+</div>
+
+<br>
+
+<div class="qheader">
+7) By using these, events can be associated. </div>
+<div class="qselections">
+<input type="radio" value="a" name="question7">a) Listeners<br>
+<input type="radio" value="b" name="question7">b) Servlets<br>
+<input type="radio" value="c" name="question7">c) Handlers<br>
+<input type="radio" value="d" name="question7">d) Contents<br>
+</div>
+
+<br>
+
+<div class="qheader">
+8)Java objects that are intended to play the role of server components in the client-server communications.  </div>
+<div class="qselections">
+<input type="radio" value="a" name="question8">a) Java Methods<br>
+
+<input type="radio" value="b" name="question8">b) Java Servlets<br>
+<input type="radio" value="c" name="question8">c) Java Instances<br>
+<input type="radio" value="d" name="question8">d) Java CLasses<br>
+</div>
+
+<br>
+
+<div class="qheader">
+9) One of the stages of servlet lifecycle which is invoked only once and is intended for any startup initialization code for the servlet. </div>
+<div class="qselections">
+<input type="radio" value="a" name="question9">a) instantiation ()<br>
+<input type="radio" value="b" name="question9">b) Request-handling()<br>
+<input type="radio" value="c" name="question9">c) initialization()<br>
+<input type="radio" value="d" name="question9">d) Destruction()<br>
+</div>
+
+<br>
+
+<div class="qheader">
+10)It is an open standard-based development and deployment platform for creating, distributing, transactional, reliable, secure, multitiered, web-based applications. </div>
+<div class="qselections">
+<input type="radio" value="a" name="question10">a) Java Virtual Machine<br>
+<input type="radio" value="b" name="question10">b) Java EE<br>
+<input type="radio" value="c" name="question10">c) JavaScript<br>
+<input type="radio" value="d" name="question9">d) JSON<br>
+</div>
+
+</form>
+
+<form>
+<div align="center">
+<input type="button" value="Grade Me!" name="B1" onClick="gradeit()"> <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()"></div>
+</form>
+
+<p id="footnote" align="center"><font face="arial" size="-1">Test Your Knowledge<br>
+<a href="http://www.javascriptkit.com">WEBTECH2018</a></font></p>
+</body>
+</html>
